@@ -5,12 +5,13 @@
                 "authProtocol": "default",
                 "enableSsl": "Disabled"
             },
+            "ssh": "Disabled",
             "previewLimit": 50,
             "server": "localhost",
             "port": 3306,
             "driver": "MySQL",
-            "name": "localhost",
-            "database": "new_one",
+            "database": "mini_ecommerce",
+            "name": "MiniEcommerceDB",
             "username": "root",
             "connectionTimeout": 30
         }
