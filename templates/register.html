@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Register</title>
+        <link rel="stylesheet" href = "{{url_for('static', filename = 'css/style.css')}}">
+    </head>
+
+    <body>
+        <nav>
+            <h2 class = "logo">Mini Ecommerce</h2>
+            <ul>
+                <li><a href="{{ url_for('home')}}">Home</a></li>
+                <li><a href="{{ url_for('login')}}">Login</a></li>
+                <li><a href="{{ url_for('register')}}">Register</a></li>
+            </ul>
+        </nav>
+        <div class = "container">
+            <h2>Create an Account</h2>
+            <form action="{{url_for('register')}}" method = "post">
+                <label for="username">Username</label>
+                <input type = "text" id = "username" name="username" required>
+            </form>
+        </div>
+    </body>
+</html>
